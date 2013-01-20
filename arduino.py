@@ -70,8 +70,8 @@ class Arduino(threading.Thread):
         print "Failed to connect"
         return False
 
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
     # This function builds and writes the output packet to be
     # sent to the arduino
     def writeOutputPacket(self):
@@ -160,11 +160,11 @@ class Arduino(threading.Thread):
             elif (mode == ';'):
                 done = True
 
->>>>>>> 37e2120a2e09ca832f4568082a6fa9e113383669
+#>>>>>>> 37e2120a2e09ca832f4568082a6fa9e113383669
     # This function constantly sends out a command packet to the arduino
     # (based on the states of all the arrays) then blocks until it receives
     # a data packet in response (and sets the appropriate arrays based on it).
-    # Thus changing the actuator-related arrays and reading from the sensor-
+    # Thus changing te actuator-related arrays and reading from the sensor-
     # related arrays is enough to interact with the arduino.
     def checkPorts(self):
         # If killReceived is set to true, we want to kill this thread
